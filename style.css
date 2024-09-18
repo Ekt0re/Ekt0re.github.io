@@ -1,10 +1,13 @@
+/* Impostazioni generali */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Stile per l'header */
 header {
     background-color: #333;
     color: white;
@@ -12,8 +15,10 @@ header {
     text-align: center;
 }
 
-.logo img {
-    width: 150px;
+header h1 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    animation: fadeInDown 1.5s ease-in-out;
 }
 
 nav ul {
@@ -30,32 +35,69 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Animazione di fade in */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Banner */
 .banner img {
     width: 100%;
     height: auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sezione Chi Siamo */
 .about {
-    padding: 40px 20px;
+    padding: 60px 20px;
     background-color: #fff;
     text-align: center;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .about h2 {
     margin-bottom: 20px;
     color: #333;
+    font-size: 2.5em;
 }
 
+.about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Sezione Progetti */
 .projects {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
 .projects h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #333;
+    font-size: 2.5em;
 }
 
 .project-list {
@@ -68,14 +110,64 @@ nav ul li a {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1em;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Animazioni aggiuntive */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
