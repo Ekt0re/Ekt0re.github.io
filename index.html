@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HITS Games</title>
+    <title>HITS Games | Indie Game Development</title>
     <link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="banner">
-        <img src="images/banner.png" alt="Banner del Team">
+        <div class="banner-bg">
+            <img src="images/banner.png" alt="HITS Games Banner">
+        </div>
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h1>HITS Games</h1>
+            <h3>Creating Worlds, One Pixel at a Time</h3>
+            <a href="#projects" class="btn btn-primary">Our Games</a>
+        </div>
     </section>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Welcome to our team's website. We are a small group of friends who develop software and video games in our spare time.</p>
+    <section id="about" class="about">
+        <h2>Who We Are</h2>
+        <p>Welcome to HITS Games. We are a passionate team of friends dedicated to crafting immersive software and video
+            game experiences in our spare time. Driven by creativity and code, we aim to deliver unique adventures that
+            resonate with players worldwide.</p>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <h2>Our Projects</h2>
         <div class="project-list">
             <div class="project-item">
-                <h3>THE FALLEN AGENT</h3>
-                <a href="https://hits-games.itch.io/the-fallen-agent" target="_blank">
-                    <img src="images/the-fallen-agent-logo.png" alt="Logo di The Fallen Agent">
-                </a>
-                <p>“The Fallen Agent” is an action and espionage game that follows a secret agent as he tries to save the galaxy!</p>
-            </div>
-			<div class="project-item">
-                <h3>Ghost Run</h3>
-                <a href="https://hits-games.itch.io/ghost-run" target="_blank">
-                    <img src="images/GhostRun-Logo.png" alt="Logo di Ghost Run">
-                </a>
-                <p>“Ghost Run” a funny game where you help a cute ghost survive the Halloween night</p>
+                <img src="images/the-fallen-agent-logo.png" alt="The Fallen Agent Logo">
+                <h3>The Fallen Agent</h3>
+                <p>An action-packed espionage thriller. Join the secret agent on a mission to save the galaxy from
+                    imminent doom.</p>
+                <a href="fallen-agent.html" class="btn btn-secondary">Learn More</a>
             </div>
             <div class="project-item">
-                <h3>MINO MALO GAME</h3>
-                <a href="https://hits-games.itch.io/mino-malo-the-game" target="_blank">
-                    <img src="images/mino-malo-logo.png" alt="Logo di MinoMalo THE GAME">
-                </a>
-                <p>HITS Games brings you this Advergame in collaboration with the Mino Malo Clothing store in Malo.</p>
+                <img src="images/GhostRun-Logo.png" alt="Ghost Run Logo">
+                <h3>Ghost Run</h3>
+                <p>A spooky yet cute survival game. Help the friendly ghost navigate through a perilous Halloween night.
+                </p>
+                <a href="ghost-run.html" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="project-item">
+                <img src="images/mino-malo-logo.png" alt="Mino Malo Logo">
+                <h3>Mino Malo: The Game</h3>
+                <p>An exclusive advergame created in collaboration with the Mino Malo clothing store.</p>
+                <a href="mino-malo.html" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 HITS Games. All rights reserved</p>
-		<p><a href="privacy.html" target="_blank">Privacy Policy</a></p>
+        <p>&copy; 2025 HITS Games. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="mailto:udevmail@gmail.com">Contact Us</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
